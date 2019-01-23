@@ -1,5 +1,5 @@
 # Create your costume_stores migration here
-class CreateCostumesStores < ActiveRecord::Migration[5.2]
+class CreateCostumeStores < ActiveRecord::Migration[5.2]
   def change
     create_table :costume_stores do |t|
       t.string :name
@@ -7,8 +7,8 @@ class CreateCostumesStores < ActiveRecord::Migration[5.2]
       t.integer :number_of_costumes
       t.integer :number_of_employees
       t.string :whether_or_not_its_still_in_business
-      t.integer :opening time
-      t.integer :closing time
+      t.integer :opening_time
+      t.integer :closing_time
     end
   end
 end
