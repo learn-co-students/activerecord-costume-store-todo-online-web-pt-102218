@@ -8,9 +8,9 @@
 # closing date
 # long description
 
-class CreateCostumeStores < ActiveRecord::Migration[4.2]
+class CreateHauntedHouses < ActiveRecord::Migration[4.2]
   def change
-    create_table :costume_stores do |t|
+    create_table :haunted_houses do |t|
       t.string :name
       t.string :location
       t.string :theme
@@ -18,7 +18,7 @@ class CreateCostumeStores < ActiveRecord::Migration[4.2]
       t.boolean :family_friendly
       t.datetime :opening_date
       t.datetime :closing_date
-      t.text :long_description
+      t.text :description
       t.timestamps
     end
   end
